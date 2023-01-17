@@ -1,5 +1,5 @@
 const consoleLog = (req, res, next) => {
-  console.log("This is a statement");
+  console.log("This is a consoleLog statement");
   next();
 };
 
