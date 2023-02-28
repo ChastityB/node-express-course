@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const consoleLog = require("./practice-middleware");
 
 app.use(express.static("./new-public"));
+app.use(consoleLog);
 
 app.get("/sample", (req, res) => {
   res.send("This is working");
